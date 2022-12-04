@@ -12,4 +12,16 @@ for food in lines:
 max=max(list_of_sums)
 print(max)
 
+# part 2
+top_3 = sorted(list_of_sums, reverse=True)[:3]
+print(top_3)
 
+
+def sum(list):
+    top_sum = 0
+    for food in list:
+        top_sum = top_sum + int(food)
+    return top_sum
+
+
+print(sum(top_3))
